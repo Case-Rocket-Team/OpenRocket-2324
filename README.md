@@ -49,7 +49,7 @@ The `pre-commit` hook needs to know where your `.ork` files are stored. By defau
     ```
 4. Replace `'path_to_your_ork_files'` with the absolute path you found in step 1. Make sure to keep the quotation marks. The line should now look something like this:
     ```python
-    ORK_DIR = '/home/username/my_repository/ork_files'
+    ORK_DIR = '/home/username/my_repository/OpenRocket-2324'
     ```
 5. Save the file and exit the text editor
 

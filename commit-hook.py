@@ -5,7 +5,7 @@ import zipfile
 import subprocess
 
 # Directory where your .ork files are stored
-ORK_DIR = 'directory/to/repo/here/OpenRocket-2324'
+ORK_DIR = 'path_to_your_ork_files'
 
 def is_zip_file(filepath):
     return zipfile.is_zipfile(filepath)
