@@ -1,4 +1,4 @@
-# Repository Name
+# OpenRocket IREC 2023/2024
 
 This repository uses a `pre-commit` hook to automatically unzip `.ork` files and stage them for commit. The script for this hook is stored in `commit-hook.py` at the root of the repository.
 
