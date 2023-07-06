@@ -177,7 +177,7 @@
             <material type="bulk" density="2040.0">Fiberglass</material>
             <length>0.629</length>
             <thickness>0.002</thickness>
-            <radius>auto 0.025</radius>
+            <radius>0.0785</radius>
 
             <subcomponents>
               <bulkhead>
@@ -244,7 +244,7 @@
             <material type="bulk" density="2040.0">Fiberglass</material>
             <length>0.025400000000000002</length>
             <thickness>0.00216</thickness>
-            <radius>auto 0.025</radius>
+            <radius>0.0785</radius>
 
             <subcomponents>
               <tubecoupler>
@@ -355,7 +355,7 @@
             <material type="bulk" density="2040.0">Fiberglass</material>
             <length>1.19</length>
             <thickness>0.00216</thickness>
-            <radius>auto 0.025</radius>
+            <radius>0.0785</radius>
 
             <subcomponents>
               <trapezoidfinset>
@@ -388,7 +388,7 @@
             <material type="bulk" density="2040.0">Fiberglass</material>
             <length>0.0111</length>
             <thickness>0.00216</thickness>
-            <radius>auto 0.025</radius>
+            <radius>0.0785</radius>
           </bodytube>
 
           <transition>
@@ -398,7 +398,7 @@
             <length>0.19399999999999998</length>
             <thickness>0.00216</thickness>
             <shape>conical</shape>
-            <foreradius>auto 0.025</foreradius>
+            <foreradius>0.0785</foreradius>
             <aftradius>0.049</aftradius>
             <foreshoulderradius>0.0</foreshoulderradius>
             <foreshoulderlength>0.0</foreshoulderlength>
