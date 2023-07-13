@@ -2,10 +2,8 @@
 <openrocket version="1.6" creator="OpenRocket 15.03">
   <rocket>
     <name>Rocket</name>
-    <motorconfiguration configid="ec0ca557-f020-427c-97c6-a70b08c804c0"/>
+    <motorconfiguration configid="ec0ca557-f020-427c-97c6-a70b08c804c0" default="true"/>
     <motorconfiguration configid="d801277f-e25f-4f8b-b8e5-450dbdf640c3"/>
-    <motorconfiguration configid="b7fc268a-f357-43f2-a070-f047cc2cd942"/>
-    <motorconfiguration configid="b0e07fd0-559d-4b25-8a73-9071f72a4f01" default="true"/>
     <referencetype>maximum</referencetype>
 
     <subcomponents>
@@ -411,24 +409,6 @@
                 <length>1.239</length>
                 <delay>0.0</delay>
               </motor>
-              <motor configid="b7fc268a-f357-43f2-a070-f047cc2cd942">
-                <type>reload</type>
-                <manufacturer>Cesaroni Technology</manufacturer>
-                <digest>c7e812503c8335a9ebf52497986324ae</digest>
-                <designation>21062-O3400-IM</designation>
-                <diameter>0.098</diameter>
-                <length>1.239</length>
-                <delay>0.0</delay>
-              </motor>
-              <motor configid="b0e07fd0-559d-4b25-8a73-9071f72a4f01">
-                <type>reload</type>
-                <manufacturer>Cesaroni Technology</manufacturer>
-                <digest>c7e812503c8335a9ebf52497986324ae</digest>
-                <designation>21062-O3400-IM</designation>
-                <diameter>0.098</diameter>
-                <length>1.239</length>
-                <delay>0.0</delay>
-              </motor>
             </motormount>
 
             <subcomponents>
@@ -546,7 +526,7 @@
   </rocket>
 
   <simulations>
-    <simulation status="outdated">
+    <simulation status="uptodate">
       <name>Spaceport America Simulation, no wind</name>
       <simulator>RK4Simulator</simulator>
       <calculator>BarrowmanCalculator</calculator>
@@ -592,46 +572,6 @@
         <warning>Body calculations may not be entirely accurate at supersonic speeds.</warning>
         <warning>Recovery device deployment at high speed (81.8 ft/s)</warning>
       </flightdata>
-    </simulation>
-
-    <simulation status="notsimulated">
-      <name>Simulation 1</name>
-      <simulator>RK4Simulator</simulator>
-      <calculator>BarrowmanCalculator</calculator>
-      <conditions>
-        <configid>b7fc268a-f357-43f2-a070-f047cc2cd942</configid>
-        <launchrodlength>1.0</launchrodlength>
-        <launchrodangle>0.0</launchrodangle>
-        <launchroddirection>90.0</launchroddirection>
-        <windaverage>2.0</windaverage>
-        <windturbulence>0.1</windturbulence>
-        <launchaltitude>0.0</launchaltitude>
-        <launchlatitude>28.61</launchlatitude>
-        <launchlongitude>-80.6</launchlongitude>
-        <geodeticmethod>spherical</geodeticmethod>
-        <atmosphere model="isa"/>
-        <timestep>0.05</timestep>
-      </conditions>
-    </simulation>
-
-    <simulation status="notsimulated">
-      <name>Simulation 2</name>
-      <simulator>RK4Simulator</simulator>
-      <calculator>BarrowmanCalculator</calculator>
-      <conditions>
-        <configid>b0e07fd0-559d-4b25-8a73-9071f72a4f01</configid>
-        <launchrodlength>1.0</launchrodlength>
-        <launchrodangle>0.0</launchrodangle>
-        <launchroddirection>90.0</launchroddirection>
-        <windaverage>2.0</windaverage>
-        <windturbulence>0.1</windturbulence>
-        <launchaltitude>0.0</launchaltitude>
-        <launchlatitude>28.61</launchlatitude>
-        <launchlongitude>-80.6</launchlongitude>
-        <geodeticmethod>spherical</geodeticmethod>
-        <atmosphere model="isa"/>
-        <timestep>0.05</timestep>
-      </conditions>
     </simulation>
   </simulations>
 </openrocket>
