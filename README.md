@@ -2,6 +2,13 @@
 
 This repository uses a `pre-commit` hook to automatically unzip `.ork` files and stage them for commit. The script for this hook is stored in `commit-hook.py` at the root of the repository.
 
+## For Noobs: no `pre-commit hook`
+The biggest change that needs to be made is converting the ork zip to a non-zipped version. The pre-commit deals with this, but if you don't want to deal with that, you can just go into the file directory and unzip the archive manually. A few **very important** things to note:
+
+1. You need to delete the zip archive before committing.
+2. the unzipped ork must have the same name (`rocket.ork`) as before the upload.
+3. the `rocket.ork` must be at the top level of the directory (i.e. just clean up the file structure and don't leave any random folders in)
+
 ## Setting Up the `pre-commit` Hook
 
 1. **Ensure Python 3 is installed:** The script is written in Python 3. You can check if you have Python 3 installed by opening a terminal/command prompt and typing `python3 --version`. If Python 3 is installed, this will display the version number. If not, you'll need to [install Python 3](https://www.python.org/downloads/).
