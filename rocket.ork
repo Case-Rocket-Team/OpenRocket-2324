@@ -16,10 +16,10 @@
             <finish>polished</finish>
             <material type="bulk" density="1780.0">Carbon fiber</material>
             <length>0.626872</length>
-            <thickness>8.89E-4</thickness>
+            <thickness>0.00127</thickness>
             <shape>ogive</shape>
             <shapeparameter>1.0</shapeparameter>
-            <aftradius>0.072644</aftradius>
+            <aftradius>0.07302499999999999</aftradius>
             <aftshoulderradius>0.0</aftshoulderradius>
             <aftshoulderlength>0.0</aftshoulderlength>
             <aftshoulderthickness>0.0</aftshoulderthickness>
@@ -159,8 +159,8 @@
             <finish>polished</finish>
             <material type="bulk" density="1780.0">Carbon fiber</material>
             <length>0.6286499999999999</length>
-            <thickness>8.890000000000009E-4</thickness>
-            <radius>0.072644</radius>
+            <thickness>0.00127</thickness>
+            <radius>0.07302499999999999</radius>
 
             <subcomponents>
               <parachute>
@@ -218,6 +218,24 @@
                 <mass>0.004535923696</mass>
                 <masscomponenttype>masscomponent</masscomponenttype>
               </masscomponent>
+
+              <parachute>
+                <name>Reefed Parachute (Modeled as Drogue)</name>
+                <position type="top">0.0</position>
+                <packedlength>0.025</packedlength>
+                <packedradius>0.0125</packedradius>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <cd>0.8</cd>
+                <material type="surface" density="0.067">Ripstop nylon</material>
+                <deployevent>apogee</deployevent>
+                <deployaltitude>200.0</deployaltitude>
+                <deploydelay>1.0</deploydelay>
+                <diameter>2.1336</diameter>
+                <linecount>6</linecount>
+                <linelength>3.6576</linelength>
+                <linematerial type="line" density="0.0018">Elastic cord (round 2 mm, 1/16 in)</linematerial>
+              </parachute>
             </subcomponents>
           </bodytube>
 
@@ -226,15 +244,15 @@
             <finish>polished</finish>
             <material type="bulk" density="1780.0">Carbon fiber</material>
             <length>0.0254</length>
-            <thickness>8.890000000000009E-4</thickness>
+            <thickness>0.0012699999999999934</thickness>
             <radius>auto</radius>
 
             <subcomponents>
               <tubecoupler>
                 <name>Ebay Coupler</name>
-                <position type="bottom">0.08255</position>
+                <position type="bottom">0.13335</position>
                 <material type="bulk" density="1780.0">Carbon fiber</material>
-                <length>0.2667</length>
+                <length>0.3175</length>
                 <radialposition>0.0</radialposition>
                 <radialdirection>0.0</radialdirection>
                 <outerradius>auto</outerradius>
@@ -289,8 +307,8 @@
 
               <masscomponent>
                 <name>Electronics Bay with Airbrakes</name>
-                <position type="middle">-0.038099999999999995</position>
-                <packedlength>0.2286</packedlength>
+                <position type="top">-0.1397</position>
+                <packedlength>0.2794</packedlength>
                 <packedradius>0.06985</packedradius>
                 <radialposition>0.0</radialposition>
                 <radialdirection>0.0</radialdirection>
@@ -310,7 +328,7 @@
 
               <bulkhead>
                 <name>Lower Bulkhead</name>
-                <position type="middle">0.09682479999999999</position>
+                <position type="middle">0.1476248</position>
                 <overridemass>0.25769716497899997</overridemass>
                 <overridesubcomponents>false</overridesubcomponents>
                 <material type="bulk" density="2700.0">Aluminum</material>
@@ -326,8 +344,8 @@
             <name>Lower Body Tube</name>
             <finish>polished</finish>
             <material type="bulk" density="1780.0">Carbon fiber</material>
-            <length>1.1938</length>
-            <thickness>8.890000000000009E-4</thickness>
+            <length>1.2446</length>
+            <thickness>0.0012699999999999934</thickness>
             <radius>auto</radius>
             <motormount>
               <ignitionevent>automatic</ignitionevent>
@@ -368,8 +386,8 @@
                 <filletmaterial type="bulk" density="680.0">Cardboard</filletmaterial>
                 <finpoints>
                   <point x="0.0" y="0.0"/>
-                  <point x="0.18923" y="0.18161"/>
-                  <point x="0.33528" y="0.18161"/>
+                  <point x="0.09398" y="0.18542"/>
+                  <point x="0.19812" y="0.18542"/>
                   <point x="0.21589999999999998" y="0.0"/>
                 </finpoints>
               </freeformfinset>
@@ -442,7 +460,7 @@
             <finish>polished</finish>
             <material type="bulk" density="1780.0">Carbon fiber</material>
             <length>0.0111252</length>
-            <thickness>8.890000000000009E-4</thickness>
+            <thickness>0.0012699999999999934</thickness>
             <radius>auto</radius>
           </bodytube>
 
@@ -483,7 +501,7 @@
   </rocket>
 
   <simulations>
-    <simulation status="loaded">
+    <simulation status="uptodate">
       <name>Spaceport America</name>
       <simulator>RK4Simulator</simulator>
       <calculator>BarrowmanCalculator</calculator>
@@ -501,9 +519,9 @@
         <atmosphere model="isa"/>
         <timestep>0.05</timestep>
       </conditions>
-      <flightdata maxaltitude="12692" maxvelocity="706.99" maxacceleration="172.65" maxmach="2.1666" timetoapogee="46.721" flighttime="173.22" groundhitvelocity="6.4541" launchrodvelocity="39.79" deploymentvelocity="277.98">
+      <flightdata maxaltitude="11188" maxvelocity="665.29" maxacceleration="163.88" maxmach="2.0349" timetoapogee="43.871" flighttime="843.89" groundhitvelocity="5.6896" launchrodvelocity="38.269" deploymentvelocity="11.273">
         <warning>Body calculations may not be entirely accurate at supersonic speeds.</warning>
-        <warning>Recovery device deployment at high speed (912 ft/s)</warning>
+        <warning>Recovery device deployment at high speed (90.1 ft/s)</warning>
       </flightdata>
     </simulation>
   </simulations>
